@@ -11,12 +11,12 @@ import java.util.Date;
  *
  * @author 1896513
  */
-public class NormalOrder {
-
+public class NormalOrder extends Order {
     String number;
     Date date;
 
-    public NormalOrder(String customerName, Date date) {
+    public NormalOrder(String customerName, Date date, String specialNumber, Date specialDate) {
+        super(specialNumber, specialDate);
         this.number = customerName;
         this.date = date;
     }

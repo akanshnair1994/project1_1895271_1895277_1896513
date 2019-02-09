@@ -1,3 +1,5 @@
+package javaapplication2;
+
 
 import java.util.Date;
 
@@ -10,12 +12,12 @@ import java.util.Date;
  *
  * @author 1896513
  */
-public class SpecialOrder {
-
+public class SpecialOrder extends Order {
     String number;
     Date date;
 
-    public SpecialOrder(String customerName, Date date) {
+    public SpecialOrder(String customerName, Date date, String specialNumber, Date specialDate) {
+        super(specialNumber, specialDate);
         this.number = customerName;
         this.date = date;
     }
